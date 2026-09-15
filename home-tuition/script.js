@@ -28,3 +28,4 @@ document.getElementById('tuitionForm').addEventListener('submit', function(e) {
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
     }, 1200);
 });
+               
