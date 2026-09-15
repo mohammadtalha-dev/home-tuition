@@ -1,13 +1,3 @@
-const lampCord = document.getElementById('lampCord');
-const body = document.body;
-
-// Toggle Lamp ON/OFF
-lampCord.addEventListener('click', () => {
-    body.classList.toggle('lamp-off');
-    body.classList.toggle('lamp-on');
-});
-
-// Submit booking form to WhatsApp
 document.getElementById('tuitionForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -28,4 +18,3 @@ document.getElementById('tuitionForm').addEventListener('submit', function(e) {
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
     }, 1200);
 });
-               
