@@ -3,143 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Tuition Available | Grade 1 to 8</title>
+    <title>Home Tuition Service | Power House, Roshan Bagh</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="lamp-off">
 
-    <div class="container">
+    <div class="lamp-container">
+        <div class="lamp">
+            <div class="light-ray"></div>
+        </div>
+        <div class="cord" id="lampCord">
+            <div class="cord-line"></div>
+            <div class="cord-handle"></div>
+        </div>
+    </div>
 
-        <!-- Top Information Header -->
-        <header class="top-header">
-            <span class="badge"><i class="fas fa-map-marker-alt"></i> Power House, Roshan Bagh, Karachi</span>
-            <h1>HOME TUITION AVAILABLE</h1>
-            <p class="sub-heading">Quality Education & Personal Attention for Every Student</p>
-            
-            <div class="highlights-grid">
-                <div class="highlight-card location-card">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Tuition Location</h3>
-                    <p><strong>Power House, Roshan Bagh</strong><br>Karachi</p>
-                </div>
-                <div class="highlight-card timing-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>Tuition Timings</h3>
-                    <p><strong>4:00 PM to 7:00 PM</strong><br>Regular classes with structured schedule.</p>
-                </div>
-                <div class="highlight-card offer-card">
-                    <i class="fas fa-gift"></i>
-                    <h3>2 Days Free Demo</h3>
-                    <p>Take 2 days free trial classes to check teaching quality before joining!</p>
-                </div>
-                <div class="highlight-card">
-                    <i class="fas fa-user-check"></i>
-                    <h3>Key Benefits</h3>
-                    <p>Small batches, regular weekly tests, conceptual learning & exam preparation.</p>
-                </div>
-            </div>
+    <div class="container">
+        <header>
+            <h1>Home Tuition Service</h1>
+            <p class="tagline">Grades 1 to 8 | Concept-Based Learning</p>
         </header>
 
-        <!-- Monthly Fee Structure -->
-        <section class="fee-section">
-            <h2><i class="fas fa-tags"></i> Monthly Fee Structure</h2>
-            <div class="fee-grid">
-                <div class="fee-card">
-                    <h4>Class 1 - 3</h4>
-                    <p class="price">Rs. 1,500 <span>/ month</span></p>
-                    <p class="fee-desc">All Subjects + Basic Foundation & Homework Support</p>
-                </div>
-                <div class="fee-card">
-                    <h4>Class 4 - 5</h4>
-                    <p class="price">Rs. 2,500 <span>/ month</span></p>
-                    <p class="fee-desc">All Subjects + Conceptual Learning & Weekly Tests</p>
-                </div>
-                <div class="fee-card">
-                    <h4>Class 6 - 8</h4>
-                    <p class="price">Rs. 3,500 <span>/ month</span></p>
-                    <p class="fee-desc">All Subjects + Maths & Science Special Focus + Exams Prep</p>
-                </div>
-            </div>
+        <section class="info-card">
+            <h2>Tuition Details</h2>
+            <p><strong>Location:</strong> Power House, Roshan Bagh, Block 19, Karachi</p>
+            <p><strong>Timings:</strong> 4:00 PM - 7:00 PM</p>
         </section>
 
-        <!-- Main Lamp & Form Interactive Area -->
-        <main class="interactive-section">
-            
-            <!-- Left Side: Animated Lamp -->
-            <div class="lamp-container">
-                <div class="lamp">
-                    <div class="lamp-shade">
-                        <div class="eyes"><span></span><span></span></div>
-                        <div class="smile"></div>
-                    </div>
-                    <div class="lamp-stand"></div>
-                    <div class="lamp-base"></div>
-                    <!-- Interactive String/Cord -->
-                    <div class="lamp-cord-wrapper" id="lampCord">
-                        <div class="lamp-cord"></div>
-                        <div class="lamp-knob"></div>
-                    </div>
-                    <!-- Yellow Light Beam Effect -->
-                    <div class="light-beam"></div>
+        <section class="pricing-card">
+            <h2>Fee Structure</h2>
+            <ul>
+                <li><strong>Class 1 - 3:</strong> Rs. 1,500 / month</li>
+                <li><strong>Class 4 - 5:</strong> Rs. 2,500 / month</li>
+                <li><strong>Class 6 - 8:</strong> Rs. 3,500 / month</li>
+            </ul>
+        </section>
+
+        <section class="form-card">
+            <h2>Book 2 Days Free Demo Class</h2>
+            <form id="tuitionForm">
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" placeholder="Enter student's full name" required>
                 </div>
-                <p class="lamp-hint">👈 Click string to turn on lamp ✨</p>
-            </div>
 
-            <!-- Right Side: Tuition Registration Form -->
-            <div class="form-container">
-                <h2>Book Free Demo Class</h2>
-                <p class="form-sub">Timing: <strong>4:00 PM - 7:00 PM</strong> | Area: <strong>Power House, Roshan Bagh</strong></p>
+                <div class="form-group">
+                    <label for="parentName">Parent / Guardian Name</label>
+                    <input type="text" id="parentName" placeholder="Enter parent's name" required>
+                </div>
 
-                <form id="tuitionForm">
-                    <div class="form-group">
-                        <label for="studentName">Student Name (Bache Ka Naam)</label>
-                        <input type="text" id="studentName" placeholder="Enter student's name" required>
-                    </div>
+                <div class="form-group">
+                    <label for="studentGrade">Class / Grade</label>
+                    <select id="studentGrade" required>
+                        <option value="" disabled selected>Select Grade</option>
+                        <option value="Class 1">Class 1</option>
+                        <option value="Class 2">Class 2</option>
+                        <option value="Class 3">Class 3</option>
+                        <option value="Class 4">Class 4</option>
+                        <option value="Class 5">Class 5</option>
+                        <option value="Class 6">Class 6</option>
+                        <option value="Class 7">Class 7</option>
+                        <option value="Class 8">Class 8</option>
+                    </select>
+                </div>
 
-                    <div class="form-group">
-                        <label for="parentName">Parent / Guardian Name</label>
-                        <input type="text" id="parentName" placeholder="Enter parent's name" required>
-                    </div>
+                <div class="form-group">
+                    <label for="phone">Parent WhatsApp / Phone Number</label>
+                    <input type="tel" id="phone" placeholder="e.g. 03001234567" required>
+                </div>
 
-                    <div class="form-group">
-                        <label for="studentGrade">Student Class / Grade</label>
-                        <select id="studentGrade" required>
-                            <option value="">Select Class</option>
-                            <option value="Class 1">Class 1 (Rs. 1,500/mo)</option>
-                            <option value="Class 2">Class 2 (Rs. 1,500/mo)</option>
-                            <option value="Class 3">Class 3 (Rs. 1,500/mo)</option>
-                            <option value="Class 4">Class 4 (Rs. 2,500/mo)</option>
-                            <option value="Class 5">Class 5 (Rs. 2,500/mo)</option>
-                            <option value="Class 6">Class 6 (Rs. 3,500/mo)</option>
-                            <option value="Class 7">Class 7 (Rs. 3,500/mo)</option>
-                            <option value="Class 8">Class 8 (Rs. 3,500/mo)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="studentArea">Your Area / Location</label>
-                        <input type="text" id="studentArea" placeholder="e.g. Roshan Bagh" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone / WhatsApp Number</label>
-                        <input type="tel" id="phone" placeholder="03XXXXXXXXX" required>
-                    </div>
-
-                    <button type="submit" class="btn-submit">
-                        <i class="fab fa-whatsapp"></i> Send Request via WhatsApp
-                    </button>
-                </form>
-                <div id="formSuccess" class="success-msg"></div>
-            </div>
-
-        </main>
-
+                <button type="submit" class="submit-btn">Send Request via WhatsApp</button>
+            </form>
+            <div id="formSuccess" class="success-msg"></div>
+        </section>
     </div>
 
     <script src="script.js"></script>
 </body>
-  </html>
-  
+</html>
