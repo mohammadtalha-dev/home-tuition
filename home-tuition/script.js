@@ -10,11 +10,12 @@ lampCord.addEventListener('click', () => {
 // Submit booking form to WhatsApp
 document.getElementById('tuitionForm').addEventListener('submit', function(e) {
     e.preventDefault();
-
+    
+const parentName = document.getElementById('parentName').value;
+    
     const studentName = document.getElementById('studentName').value;
-    const parentName = document.getElementById('parentName').value;
+     
     const studentGrade = document.getElementById('studentGrade').value;
-    const studentArea = document.getElementById('studentArea').value;
     const phone = document.getElementById('phone').value;
 
     // Aapka Asli WhatsApp Number Integrated:
