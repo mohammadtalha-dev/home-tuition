@@ -10,18 +10,15 @@ lampCord.addEventListener('click', () => {
 // Submit booking form to WhatsApp
 document.getElementById('tuitionForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-const parentName = document.getElementById('parentName').value;
-    
+
+    const parentName = document.getElementById('parentName').value;
     const studentName = document.getElementById('studentName').value;
-     
     const studentGrade = document.getElementById('studentGrade').value;
     const phone = document.getElementById('phone').value;
 
-    // Aapka Asli WhatsApp Number Integrated:
     const whatsappNumber = "923302413247"; 
     
-    const message = `Hello! I want to claim 2 Days Free Demo Class.%0A%0A*Student Name:* ${encodeURIComponent(studentName)}%0A*Parent Name:* ${encodeURIComponent(parentName)}%0A*Student Class:* ${encodeURIComponent(studentGrade)}%0A*Student Area:* ${encodeURIComponent(studentArea)}%0A*Tuition Location:* Power House, Roshan Bagh, Karachi%0A*Preferred Timing:* 4:00 PM - 7:00 PM%0A*Contact Number:* ${encodeURIComponent(phone)}`;
+    const message = `Hello! I want to claim 2 Days Free Demo Class.%0A%0A*Parent Name:* ${encodeURIComponent(parentName)}%0A*Student Name:* ${encodeURIComponent(studentName)}%0A*Student Class:* ${encodeURIComponent(studentGrade)}%0A*Tuition Location:* Power House, Roshan Bagh, Block 19, Karachi%0A*Preferred Timing:* 4:00 PM - 7:00 PM%0A*Contact Number:* ${encodeURIComponent(phone)}`;
 
     const successBox = document.getElementById('formSuccess');
     successBox.style.display = 'block';
@@ -31,3 +28,4 @@ const parentName = document.getElementById('parentName').value;
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
     }, 1200);
 });
+                                                        
